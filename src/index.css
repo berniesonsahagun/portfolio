@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./calendar.css";
+
+@font-face {
+  font-family: "MS Sans Serif";
+  src: url("./assets/fonts/MS-Sans-Serif.ttf");
+}
 
 * {
   box-sizing: border-box;
@@ -9,7 +16,7 @@
 /* Reusable Classes */
 
 .clickable-button {
-  @apply shadow-windowInactive active:shadow-windowPressed px-2;
+  @apply shadow-windowInactive active:shadow-windowPressed px-2 py-1;
 }
 
 /* End Reusable Classes */

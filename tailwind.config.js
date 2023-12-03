@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires, no-undef
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -10,7 +14,11 @@ export default {
         "window-content": "808080",
       },
       fontFamily: {
-        MSsans: "MS Sans Serif",
+        arial: ["Arial", ...defaultTheme.fontFamily.sans],
+        sans: ["MS Sans Serif", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        taskbarItem: ["14px", "16.5px"],
       },
       boxShadow: {
         windowPressed:
@@ -23,11 +31,12 @@ export default {
       backgroundImage: {
         "desktop-bg-gradient":
           "linear-gradient(180deg, #0301AE 2.73%, rgba(180, 180, 229, 0.96) 28.68%, rgba(255, 255, 255, 0.84) 51.75%, rgba(202, 202, 231, 0.74) 63.18%, #0301AE 93.41%);",
-        "desktop-bg-texture": "url('./assets/bg-texture.jpg')",
+        "desktop-bg-texture": "url('./assets/images/bg-texture.jpg')",
         "window-header-bg": "linear-gradient(90deg, #000080 0%, #1084D0 100%)",
       },
       gridTemplateColumns: {
         startBar: "auto 1fr auto",
+        titleBar: "1fr auto",
       },
       gridTemplateRows: {
         desktop: "1fr auto",

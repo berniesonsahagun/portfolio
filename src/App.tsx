@@ -1,3 +1,6 @@
+import TaskbarItem from "./components/TaskbarItem";
+import Calendar from "./components/calendar/Calendar";
+
 function App() {
   return (
     <main className="grid bg-desktop-bg-gradient bg-cover bg-center grid-rows-desktop h-screen w-screen overflow-hidden">
@@ -5,7 +8,7 @@ function App() {
         <div className="sample-icon absolute top-[300px] left-[625px] z-50">
           <img
             className="text-center w-[100px] h-[100px] mx-auto"
-            src="./src/assets/html2-2.png"
+            src="./src/assets/images/html2-2.png"
           />
           <span className="text-white text-center text-sm font-MSsans">
             MCGI Hub Translate
@@ -30,32 +33,27 @@ function App() {
                 </div>
               </div>
             </div>
-            <button className="clickable-button px-2">
-              <span>ICON</span>
-              <span>Bernieson</span>
-            </button>
+            <TaskbarItem
+              icon={"./src/assets/images/windows-4.png"}
+              text="Bernieson"
+            />
           </div>
 
           <ul className="flex mx-2">
             <li>
-              <button className="clickable-button mr-[3px]">
-                <span>ICON</span>
-                <span>Bernieson</span>
-              </button>
-              <button className="clickable-button px-2 mr-[3px]">
-                <span>ICON</span>
-                <span>Bernieson</span>
-              </button>
-              <button className="shadow-windowPressed px-2 mr-[3px]">
-                <span>ICON</span>
-                <span>Bernieson</span>
-              </button>
+              <TaskbarItem
+                icon={"./src/assets/images/directory_open_cabinet_fc-1.png"}
+                text="Sample Text"
+              />
+            </li>
+            <li>
+              <TaskbarItem
+                icon={"./src/assets/images/directory_open_cabinet_fc-1.png"}
+                text="Sample Text"
+              />
             </li>
           </ul>
-          <button className="clickable-button px-2">
-            <span>ICON</span>
-            <span>Bernieson</span>
-          </button>
+          <Calendar />
         </div>
       </nav>
     </main>
