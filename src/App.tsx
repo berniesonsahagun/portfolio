@@ -1,5 +1,6 @@
 import TaskbarItem from "./components/TaskbarItem";
 import Calendar from "./components/calendar/Calendar";
+import Minesweeper from "./components/minesweeper/Minesweeper";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <span className="text-white text-center text-sm font-MSsans">
             MCGI Hub Translate
           </span>
+
+          <Minesweeper />
         </div>
       </section>
       <nav className="bg-windows shadow-windowBorder">

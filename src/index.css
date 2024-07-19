@@ -9,6 +9,11 @@
   src: url("./assets/fonts/MS-Sans-Serif.ttf");
 }
 
+@font-face {
+  font-family: "Digital";
+  src: url("./assets/fonts/CursedTimerUlil-Aznm.ttf");
+}
+
 * {
   box-sizing: border-box;
 }

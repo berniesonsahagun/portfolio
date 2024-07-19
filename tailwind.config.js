@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         arial: ["Arial", ...defaultTheme.fontFamily.sans],
         sans: ["MS Sans Serif", ...defaultTheme.fontFamily.sans],
+        digital: ["Digital"],
       },
       fontSize: {
         taskbarItem: ["14px", "16.5px"],
