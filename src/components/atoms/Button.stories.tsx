@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ChevronDown } from "lucide-react";
 import { Button } from "./Button";
 
 const meta = {
@@ -34,57 +33,25 @@ export const Default: Story = {
   },
 };
 
-export const Disabled: Story = {
+export const Taskbar: Story = {
   args: {
-    children: "Button",
-    disabled: true,
+    icon: "./src/assets/images/directory_open_cabinet_fc-1.png",
+    children: "Your text here",
   },
 };
 
-export const RegularWithDot: Story = {
+export const Start: Story = {
   args: {
-    children: "Button",
+    icon: "./src/assets/images/utopia_smiley.png",
+    variant: "flat",
+    children: "Twitter",
   },
 };
 
-export const Pill: Story = {
+export const Desktop: Story = {
   args: {
-    children: "Button",
-  },
-};
-
-export const Icon: Story = {
-  args: {
-    size: "icon",
-    children: <ChevronDown />,
-  },
-};
-
-export const Outline: Story = {
-  args: {
-    variant: "outline",
-    children: "Button",
-  },
-};
-
-export const OutlineWithIcon: Story = {
-  args: {
-    variant: "outline",
-    size: "icon",
-    children: <ChevronDown />,
-  },
-};
-
-export const Ghost: Story = {
-  args: {
-    variant: "ghost",
-    children: "Button",
-  },
-};
-
-export const GhostWithDot: Story = {
-  args: {
-    variant: "ghost",
-    children: "Button",
+    icon: "./src/assets/images/html2-2.png",
+    variant: "desktop",
+    children: "MCGI Hub Translate",
   },
 };
