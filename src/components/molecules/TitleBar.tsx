@@ -1,19 +1,21 @@
+import { Button } from "../atoms/Button";
+
 interface TitleBarProps {
-  iconSrc: string;
+  icon: string;
   title: string;
 }
 
-export function TitleBar({ iconSrc, title }: TitleBarProps) {
+export default function TitleBar({ icon, title }: TitleBarProps) {
   return (
     <header className="w-full flex justify-between gap-5 bg-window-header-bg p-1">
       <div className="flex gap-2 items-center">
-        <img src={iconSrc} width="16px" />
+        <img src={icon} width="16px" />
         <h3 className="overflow-hidden whitespace-nowrap text-ellipsis text-white font-MSsans text-sm">
           {title}
         </h3>
       </div>
       <div className="flex justify-end gap-[2px]">
-        <button className="shadow-windowInactive h-[18px] w-[16px] flex items-end justify-center active:shadow-windowPressed bg-windows p-1">
+        <Button variant="titleBar">
           <svg
             width="6"
             height="2"
@@ -30,8 +32,9 @@ export function TitleBar({ iconSrc, title }: TitleBarProps) {
               </clipPath>
             </defs>
           </svg>
-        </button>
-        <button className="shadow-windowInactive h-[18px] w-[16px] active:shadow-windowPressed bg-windows p-1">
+        </Button>
+
+        <Button variant="titleBar">
           <svg
             className="block"
             width="9"
@@ -54,8 +57,9 @@ export function TitleBar({ iconSrc, title }: TitleBarProps) {
               </clipPath>
             </defs>
           </svg>
-        </button>
-        <button className="shadow-windowInactive h-[18px] w-[16px] active:shadow-windowPressed bg-windows p-1">
+        </Button>
+
+        <Button variant="titleBar">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="8"
@@ -82,7 +86,7 @@ export function TitleBar({ iconSrc, title }: TitleBarProps) {
               </clipPath>
             </defs>
           </svg>
-        </button>
+        </Button>
       </div>
     </header>
   );

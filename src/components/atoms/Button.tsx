@@ -4,14 +4,17 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "flex items-center justify-center gap-1 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50",
+  "flex items-center gap-1 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         default:
           "text-xs bg-primary shadow-windowInactive active:shadow-windowPressed",
         flat: "bg-primary",
-        desktop: "flex-col text-white bg-primary",
+        desktop: "flex-col text-white justify-center",
+        titleBar:
+          "shadow-windowInactive h-[18px] w-[16px] active:shadow-windowPressed bg-windows flex items-end justify-center gap-0",
+        engraved: "shadow-engraved bg-windows",
       },
       size: {
         default: "p-1",
@@ -44,7 +47,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...props}
       >
-        <img src={icon} />
+        {icon && <img src={icon} />}
         {children}
       </Comp>
     );
