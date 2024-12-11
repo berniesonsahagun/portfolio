@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "../atoms/Popover";
 import { Button } from "../atoms/Button";
 import { Calendar } from "../atoms/Calendar";
+import Window from "../organisms/Window";
+import CalendarIcon from "@/assets/images/calendar-icon.png";
 
 const Clock = () => {
   const [time, setTime] = useState("");
@@ -27,12 +29,14 @@ const Clock = () => {
         </Button>
       </PopoverTrigger>
       <PopoverContent align="end" side="top" className="p-0 rounded-none block">
-        <Calendar
-          mode="single"
-          selected={date}
-          onSelect={setDate}
-          className="bg-windows"
-        />
+        <Window className="relative" icon={CalendarIcon} title="Calendar">
+          <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            className="bg-windows"
+          />
+        </Window>
       </PopoverContent>
     </Popover>
   );
