@@ -1,13 +1,19 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, MouseEventHandler } from "react";
 
-const useModal = (initialState = false) => {
+const useModal = (
+  initialState = false
+): [
+  boolean,
+  MouseEventHandler<HTMLElement>,
+  MouseEventHandler<HTMLElement>
+] => {
   const [isOpen, setIsOpen] = useState(initialState);
 
-  const openModal = useCallback(() => {
+  const openModal: MouseEventHandler<HTMLElement> = useCallback(() => {
     setIsOpen(true);
   }, []);
 
-  const closeModal = useCallback(() => {
+  const closeModal: MouseEventHandler<HTMLElement> = useCallback(() => {
     setIsOpen(false);
   }, []);
 

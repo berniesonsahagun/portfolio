@@ -1,15 +1,19 @@
-import React from "react";
+import { MouseEventHandler } from "react";
 import { TitleBar, Cursor } from "@react95/core";
 import { Explorer103 } from "@react95/icons";
-import * as S from "./layoutStyling";
+import * as S from "@/components/LayoutStyles";
 
-function Portfolio({ closePortfolio }) {
+interface ModalProps {
+  handleCloseModal: MouseEventHandler<HTMLElement>;
+}
+
+export function PortfolioModal({ handleCloseModal }: ModalProps) {
   return (
     <S.styledModal
       title="Portfolio.txt"
       titleBarOptions={[
         <S.styledModal.Minimize key="minimize" />,
-        <TitleBar.Close onClick={closePortfolio} key="close" />,
+        <TitleBar.Close onClick={handleCloseModal} key="close" />,
       ]}
       height="100%"
       icon={<Explorer103 variant="16x16_4" />}
@@ -432,5 +436,3 @@ function Portfolio({ closePortfolio }) {
     </S.styledModal>
   );
 }
-
-export default Portfolio;

@@ -1,16 +1,20 @@
-import React from "react";
+import { MouseEventHandler } from "react";
 import { TitleBar, ProgressBar } from "@react95/core";
 import { Shell3236 } from "@react95/icons";
-import * as S from "./layoutStyling";
+import * as S from "@/components/LayoutStyles";
 
-function Skills({ closeSkillsModal }) {
+interface ModalProps {
+  handleCloseModal: MouseEventHandler<HTMLElement>;
+}
+
+export function SkillsModal({ handleCloseModal }: ModalProps) {
   return (
     <S.styledModal
       className="styledModal"
       title={"Skills.txt"}
       titleBarOptions={[
         <S.styledModal.Minimize key="minimize" />,
-        <TitleBar.Close onClick={closeSkillsModal} key="close" />,
+        <TitleBar.Close onClick={handleCloseModal} key="close" />,
       ]}
       icon={<Shell3236 variant="16x16_4" />}
     >
@@ -75,5 +79,3 @@ function Skills({ closeSkillsModal }) {
     </S.styledModal>
   );
 }
-
-export default Skills;

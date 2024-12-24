@@ -1,8 +1,12 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, MouseEventHandler } from "react";
 import { Modal, Frame, TitleBar, Alert } from "@react95/core";
 import { Mspaint } from "@react95/icons";
 
-function Paint({ closePaint }) {
+interface ModalProps {
+  handleCloseModal: MouseEventHandler<HTMLElement>;
+}
+
+export function PaintModal({ handleCloseModal }: ModalProps) {
   const [showAlert, setShowAlert] = useState(false);
   const [showModal, setShowModal] = useState(true);
   const windowWidth = useRef(window.innerWidth);
@@ -65,7 +69,7 @@ function Paint({ closePaint }) {
           title={"Paint"}
           titleBarOptions={[
             <Modal.Minimize key="minimize" />,
-            <TitleBar.Close onClick={closePaint} key="close" />,
+            <TitleBar.Close onClick={handleCloseModal} key="close" />,
           ]}
           dragOptions={{
             defaultPosition: {
@@ -77,7 +81,7 @@ function Paint({ closePaint }) {
         >
           <Frame style={{ padding: 0, width: "100%", height: "100%" }}>
             <iframe
-              src="https://jspaint.app"
+              src="https://paint.js.org/"
               width="100%"
               height="100%"
             ></iframe>
@@ -87,5 +91,3 @@ function Paint({ closePaint }) {
     </>
   );
 }
-
-export default Paint;

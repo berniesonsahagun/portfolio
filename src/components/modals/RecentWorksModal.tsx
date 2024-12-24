@@ -1,14 +1,20 @@
+import { MouseEventHandler } from "react";
 import { TitleBar, Cursor } from "@react95/core";
 import { Textchat } from "@react95/icons";
-import * as S from "./layoutStyling";
 
-function About({ closeAboutModal }) {
+import * as S from "@/components/LayoutStyles";
+
+interface ModalProps {
+  handleCloseModal: MouseEventHandler<HTMLElement>;
+}
+
+export function RecentWorksModal({ handleCloseModal }: ModalProps) {
   return (
     <S.styledModal
       icon={<Textchat variant="16x16_4" />}
       title={"Welcome.txt"}
       titleBarOptions={[
-        <TitleBar.Close onClick={closeAboutModal} key="close" />,
+        <TitleBar.Close onClick={handleCloseModal} key="close" />,
       ]}
     >
       <S.styledModalFrame bg="white" boxShadow="$in">
@@ -67,5 +73,3 @@ function About({ closeAboutModal }) {
     </S.styledModal>
   );
 }
-
-export default About;

@@ -1,15 +1,20 @@
+import { MouseEventHandler } from "react";
 import { TitleBar, Cursor } from "@react95/core";
 import { Shell32133 } from "@react95/icons";
-import * as S from "./layoutStyling";
+import * as S from "@/components/LayoutStyles";
 
-function CV({ closeCV }) {
+interface ModalProps {
+  handleCloseModal: MouseEventHandler<HTMLElement>;
+}
+
+export function CVModal({ handleCloseModal }: ModalProps) {
   return (
     <S.styledModal
       icon={<Shell32133 variant="16x16_4" />}
       title={"CV.txt"}
       titleBarOptions={[
         <S.styledModal.Minimize key="minimize" />,
-        <TitleBar.Close onClick={closeCV} key="close" />,
+        <TitleBar.Close onClick={handleCloseModal} key="close" />,
       ]}
       height="100%"
     >
@@ -180,5 +185,3 @@ function CV({ closeCV }) {
     </S.styledModal>
   );
 }
-
-export default CV;
