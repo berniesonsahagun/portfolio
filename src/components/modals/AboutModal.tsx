@@ -14,22 +14,24 @@ export function AboutModal({ handleCloseModal }: ModalProps) {
       icon={<Notepad1 variant="16x16_4" />}
       title={"Welcome.txt"}
       titleBarOptions={[
+        <S.styledModal.Minimize key="minimize" />,
         <TitleBar.Close onClick={handleCloseModal} key="close" />,
       ]}
+      width="500px"
     >
       <S.styledModalFrame bg="white" boxShadow="$in">
-        <h1>Hello!</h1>
+        <h1>Hi there!</h1>
         <p>
-          I'm Janne, a design generalist. I've been working with product
-          development in a variety of roles and domains, both as an in-house
-          professional and as an external consultant: e.g. eCommerce, public
-          sector, startups, journalism to mention a few. I'm into structured and
-          systems oriented software development, where design is agile and
-          rapid. I like to get my hands dirty with the front-end of things;
-          design engineering you could say.
+          I'm Bernie, a software engineer. Throughout my career, I've worked in
+          various roles in software development—spanning frontend, backend,
+          DevOps, documentation, automation, SEO, and management. I've also been
+          involved in a wide range of projects, such as landing pages,
+          e-commerce sites, and internal dashboards. You could say that I'm
+          versatile, but what I love most is still my original passion—software
+          development, coding, and tinkering with things.
         </p>
         <p>
-          This app, sort of a playground of ideas, has been built with Vite and{" "}
+          This portfolio was built with Vite and{" "}
           <a
             href="https://github.com/React95/React95"
             target="_blank"
@@ -38,36 +40,8 @@ export function AboutModal({ handleCloseModal }: ModalProps) {
           >
             React95
           </a>
-          , an open-source Windows95 component library for React. If you're
-          interested in this project even further check out the{" "}
-          <a
-            href="https://www.figma.com/community/file/1217110360892669474"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Cursor.Pointer}
-          >
-            React95 component library on Figma
-          </a>{" "}
-          that I made as a past-time project.
-        </p>
-        <p>
-          <a
-            href="https://windowswallpaper.miraheze.org/wiki/File:Clouds_(Windows_95).png"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Cursor.Pointer}
-          >
-            Background
-          </a>{" "}
-          by WindowsAesthetics /{" "}
-          <a
-            href="https://creativecommons.org/licenses/by-sa/4.0/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Cursor.Pointer}
-          >
-            CC BY-SA 4.0
-          </a>
+          , an open-source Windows95 component library for React. Many thanks to
+          the contributors of the React95 library! ❤️
         </p>
       </S.styledModalFrame>
     </S.styledModal>

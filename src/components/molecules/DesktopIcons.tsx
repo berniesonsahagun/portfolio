@@ -1,12 +1,5 @@
 import { Cursor } from "@react95/core";
-import {
-  CdMusic,
-  Explorer103,
-  Mail,
-  Mspaint,
-  Notepad1,
-  Progman8,
-} from "@react95/icons";
+import { CdMusic, Explorer103, Mail, Mspaint, Notepad1 } from "@react95/icons";
 import { MouseEventHandler } from "react";
 
 const iconsList = [
@@ -39,14 +32,6 @@ const iconsList = [
       <CdMusic variant="32x32_4" style={{ marginLeft: 32, marginTop: 15 }} />
     ),
     title: "Music",
-    type: "modal",
-  },
-
-  {
-    icon: (
-      <Progman8 variant="32x32_4" style={{ marginLeft: 32, marginTop: 15 }} />
-    ),
-    title: "Recent Works",
     type: "modal",
   },
 

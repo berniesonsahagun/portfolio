@@ -11,9 +11,10 @@ export function MusicModal({ handleCloseModal }: ModalProps) {
   return (
     <S.styledModal
       title={"Music"}
-      titleBarOptions={
-        <TitleBar.Close onClick={handleCloseModal} key="close" />
-      }
+      titleBarOptions={[
+        <S.styledModal.Minimize key="minimize" />,
+        <TitleBar.Close onClick={handleCloseModal} key="close" />,
+      ]}
       icon={<CdMusic variant="16x16_4" />}
       width="500px"
     >

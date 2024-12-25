@@ -21,59 +21,83 @@ export function SkillsModal({ handleCloseModal }: ModalProps) {
       <S.styledModalFrame bg="white" boxShadow="$in">
         <h1>Some of my skills</h1>
         <p>
-          I descibe myself as a generalist. I have come across a multiple
-          different tasks and duties and learned a whole bunch of different
-          areas in the design industry. However, I disagree with quantifying
-          skills as numbers; percentages, units etc. - are skills really
-          something people can measure? However, here is a rough estimate of
-          some of my skills, in progress bar style.
+          I am versatile. I can be your jack-of-all-trades but I don't want to
+          be a master of none. I'll show you here what I think is my level right
+          now, and I'll tell myself to update this in the future. This ain't
+          bragging, but this is my humble journey.
         </p>
-        <h2>Design tools</h2>
-        <h4>Figma, Sketch</h4>
-        <ProgressBar width={250} percent={95} />
-        <h4>Adobe CC</h4>
-        <ProgressBar width={250} percent={85} />
-        <h4>Design systems</h4>
-        <ProgressBar width={250} percent={85} />
-        <h4>Prototyping, wireframing, user flows</h4>
-        <ProgressBar width={250} percent={80} />
-        <h4>Usability testing, interviewing, user research</h4>
-        <ProgressBar width={250} percent={80} />
-        <h4>WCAG, accessibility testing</h4>
-        <ProgressBar width={250} percent={80} />
-        <h4>Analytics</h4>
-        <ProgressBar width={250} percent={70} />
-        <div style={{ margin: "8px" }} />
-        <h2>Dev tools</h2>
-        <h4>Storybook(JS)</h4>
-        <ProgressBar width={250} percent={75} />
-        <h4>HTML, CSS, SASS</h4>
-        <ProgressBar width={250} percent={75} />
-        <h4>Wordpress (PHP/Themes)</h4>
-        <ProgressBar width={250} percent={70} />
-        <h4>Git</h4>
-        <ProgressBar width={250} percent={70} />
+
+        <p>Let me show you what I have, of course, in numbers.</p>
+
+        <h2>Frontend Development</h2>
         <h4>React</h4>
-        <ProgressBar width={250} percent={45} />
-        <h4>Vue</h4>
-        <ProgressBar width={250} percent={15} />
+        <ProgressBar width={250} percent={95} />
+        <h4>NextJS</h4>
+        <ProgressBar width={250} percent={75} />
+        <h4>HTML</h4>
+        <ProgressBar width={250} percent={99} />
+        <h4>CSS</h4>
+        <ProgressBar width={250} percent={99} />
+        <h4>Typescript</h4>
+        <ProgressBar width={250} percent={80} />
+        <h4>Angular</h4>
+        <ProgressBar width={250} percent={60} />
+
         <div style={{ margin: "8px" }} />
-        <h2>Other Skills</h2>
+
+        <h2>Backend Development</h2>
+        <h4>NodeJS</h4>
+        <ProgressBar width={250} percent={80} />
+        <h4>.NET Framework</h4>
+        <ProgressBar width={250} percent={35} />
+        <h4>Python (Flask and FastAPI)</h4>
+        <ProgressBar width={250} percent={25} />
+        <h4>Databases</h4>
+        <ProgressBar width={250} percent={75} />
+
+        <div style={{ margin: "8px" }} />
+
+        <h2>DevOpsSec</h2>
+        <h4>Git / Github / Gitlab</h4>
+        <ProgressBar width={250} percent={55} />
+        <h4>AWS Server</h4>
+        <ProgressBar width={250} percent={35} />
+        <h4>Docker</h4>
+        <ProgressBar width={250} percent={15} />
+        <h4>Kubernetes</h4>
+        <ProgressBar width={250} percent={5} />
+        <h4>Automation</h4>
+        <ProgressBar width={250} percent={40} />
+        <h4>Testing</h4>
+        <ProgressBar width={250} percent={15} />
+        <h4>Security</h4>
+        <ProgressBar width={250} percent={25} />
+
+        <div style={{ margin: "8px" }} />
+
+        <h2>SEO &amp; Marketing</h2>
+        <h4>Google Analytics</h4>
+        <ProgressBar width={250} percent={35} />
+        <h4>Google Tag Manager</h4>
+        <ProgressBar width={250} percent={35} />
+        <h4>Google Ads</h4>
+        <ProgressBar width={250} percent={20} />
+        <h4>Google Looker Studio</h4>
+        <ProgressBar width={250} percent={55} />
+        <h4>Google Search Console</h4>
+        <ProgressBar width={250} percent={30} />
+        <h4>SEO</h4>
+        <ProgressBar width={250} percent={25} />
+
+        <div style={{ margin: "8px" }} />
+
+        <h2>Soft Skills</h2>
         <ul>
-          <li>Agile methods</li>
-          <li>Product development</li>
-          <li>Project management</li>
-          <li>Design systems</li>
-          <li>User interviews</li>
-          <li>User testing</li>
-          <li>Wireframing and prototyping</li>
-          <li>Visual design</li>
-          <li>Research</li>
-          <li>Copywriting and social media</li>
-          <li>Content creation</li>
-          <li>Workshops</li>
-          <li>Facilitation</li>
-          <li>Concept creation</li>
+          <li>Project Management</li>
+          <li>Timeboxing</li>
+          <li>Agile Methodology</li>
+          <li>Reporting</li>
+          <li>Communication</li>
         </ul>
       </S.styledModalFrame>
     </S.styledModal>

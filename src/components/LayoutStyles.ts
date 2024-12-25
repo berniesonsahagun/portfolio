@@ -19,6 +19,7 @@ export const styledModal = styled(Modal)`
   @media ${device.mobile} {
     margin: 5px;
     top: 0;
+    max-width: 100%;
   }
   @media ${device.tablet} {
     max-width: 600px;
@@ -60,4 +61,11 @@ export const DesktopTexture = styled.div`
   background-image: url(${DesktopTextureBG});
   opacity: 0.6;
   z-index: -1;
+`;
+
+export const DesktopIconsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 100%;
 `;

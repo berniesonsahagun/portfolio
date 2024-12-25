@@ -1,5 +1,5 @@
 import { MouseEventHandler } from "react";
-import { TitleBar, Cursor } from "@react95/core";
+import { TitleBar } from "@react95/core";
 import { Shell32133 } from "@react95/icons";
 import * as S from "@/components/LayoutStyles";
 
@@ -21,165 +21,126 @@ export function CVModal({ handleCloseModal }: ModalProps) {
       <S.styledModalFrame bg="white" boxShadow="$in">
         <h1>Curriculum Vitae</h1>
         <p>
-          Product design, user-centered design methods and agile software
-          development. These are some of the keywords that describe my interests
-          and know-how. I have a long work history in communication and
-          user-centered design. As a generalist equipped with a futuristic and
-          social mind, I shine in duties where I get to use my social skills and
-          design talents in practice, such as in project management, product
-          design and testing.
+          A Software Engineer with expertise in developing scalable, responsive
+          web solutions using modern frameworks like NextJS, React, and Webflow.
+          Proven track record of managing end-to-end development, maintaining
+          high-quality standards across multiple platforms. Passionate about
+          leveraging technology to create seamless user experiences and
+          committed to continuous learning.
         </p>
         <hr color="gray" />
         <h2>Work History</h2>
-        <h3>Head of Design, Product Owner</h3>
-        <span>Anyhau Oy</span>
+        <h3>Software Engineer</h3>
+        <span>
+          Contact Agency Ltd – London, England <em>(Feb 2024 – Present)</em>
+        </span>
         <p>
-          A leadership role in taking charge of the new platform's design for
-          all of{" "}
-          <a
-            className={Cursor.Pointer}
-            href="https://anyhau.fi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Anyhau
-          </a>{" "}
-          products for two user groups: pet owners and pet businesses. Alongside
-          leading the design and organizing daily design work, having ownership
-          in project management and organizing daily ceremonies, as well as
-          pruning the backlog and keeping focus for the whole team.
+          At Contact Agency, I develop and deploy brand websites using Webflow,
+          NextJS, and/or Contentful, ensuring that the websites is pixel-perfect
+          to the designs and responsive on different screens. I focus on
+          creating reusable components with NextJS and TailwindCSS, making sure
+          that what I did yesterday, was something that can still be useful
+          today.
         </p>
-        <h3>Designer</h3>
-        <span>Sanoma Media Finland</span>
+
+        <h3>Assistant Head of Web and MarTech</h3>
+        <span>
+          <em>
+            IMPACT! Brands and Communications – Singapore (Apr 2022 – Present)
+          </em>
+        </span>
         <p>
-          Maintaining and developing new storytelling solutions, journalistic
-          tools and data visualization at{" "}
-          <a
-            className={Cursor.Pointer}
-            href="https://hs.fi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Helsingin Sanomat
-          </a>{" "}
-          Datadesk. Biggest project from the time at Sanoma was being the design
-          lead and principal designer for the{" "}
-          <a
-            href="https://vaalikone.fi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Cursor.Pointer}
-          >
-            voting aid machines
-          </a>{" "}
-          for all Sanoma brands (Aamulehti, HS, Ilta-Sanomat, regional brands).
-          The voting aid machines consists of three user interfaces: the
-          candidate machine, voting aid machines to the voters and results
-          service for election night.
+          As the Assistant Head of Web and MarTech, I oversee core development
+          strategies, quality control, and project timelines. In my first year,
+          I successfully delivered and deployed five projects, all of which were
+          retained for ongoing maintenance. I manage shared hosting accounts,
+          ensuring compliance with client security policies, resolving bugs, and
+          optimizing website performance. I also lead the adoption of new
+          technologies, including ReactJS, Supabase, GSAP, and Webflow, to
+          enhance development processes and improve the quality of deliverables.
         </p>
-        <h3>UX Designer</h3>
-        <span>S-group (SOK) / Sokos </span>
+
+        <h3>Web Developer</h3>
+        <span>
+          IMPACT! Brands and Communications – Singapore{" "}
+          <em>(Jul 2021 – Apr 2022)</em>
+        </span>
         <p>
-          Developing a new custom-made{" "}
-          <a
-            className={Cursor.Pointer}
-            href="https://sokos.fi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Sokos.fi
-          </a>{" "}
-          webstore and driving user-centric design within the community. Design
-          ownership of the visual identity of the webstore, and the brand
-          identity within. Alongside Sokos development, participating in
-          internal design system development and developing company-wide design
-          processes.
+          Starting as a Web Developer, I built responsive websites from design
+          files using Figma, Photoshop, and Adobe XD. I used platforms like
+          Webflow, WordPress, Wix, and Unbounce, to develop websites that are
+          true to their designs down to the last pixel.
         </p>
-        <h3>UX/UI Designer, Accessibility Specialist</h3>
-        <span>Solidabis Oy</span>
+
+        <h3>React Developer (Project-Based)</h3>
+        <span>
+          Hoorooh Digital – Colorado, USA <em>(Oct 2022 – Jan 2023)</em>
+        </span>
         <p>
-          Design and UX consultant work focusing on the public sector clients
-          and design systems. One of the biggest achievements was a
-          Storybook-based styleguide which I coded, designed and made from
-          scratch as a one person team with minimal budget. Part-time managing
-          Solidabis marketing strategy, during which I single handedly
-          redesigned and redeveloped{" "}
-          <a
-            href="https://solidabis.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Cursor.Pointer}
-          >
-            Solidabis' Wordpress-based website
-          </a>{" "}
-          using the Genesis framework and coding a custom theme on PHP, CSS and
-          HTML.
+          I migrated a legacy portfolio website to the latest ReactJS framework,
+          enhancing performance and maintainability. I collaborated with the
+          development team to create a multi-website repository utilizing React,
+          Gatsby, and GraphQL.
         </p>
-        <h3>Junior UX/UI Designer</h3>
-        <span>IBM</span>
+
+        <h3>Sole Web Developer</h3>
+        <span>
+          Razza Consulting Group, Inc. – Quezon City, PH{" "}
+          <em>(Jul 2020 – Jul 2021)</em>
+        </span>
         <p>
-          UI development, front-end collaboration, visual and graphic design.
-          Client cooperation and usability assessments of implemented products
-          daily. One of the greatest accomplishments was to get my team to use
-          the{" "}
-          <a
-            href="https://carbondesignsystem.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Cursor.Pointer}
-          >
-            Carbon Design System
-          </a>
-          , therefore increasing consistency and scaling with demos.
+          As the sole Web Developer at Razza Consulting Group, I managed all
+          technical deliverables, including website development using WordPress,
+          AWS hosting, and domain management. I implemented security policies,
+          maintained backups, and ensured the reliability and data integrity of
+          client websites.
         </p>
+
+        <h3>Android Developer Intern</h3>
+        <span>
+          Samsung R&D Institute Philippines – Taguig, NCR, PH{" "}
+          <em>(Jun 2017 – Aug 2017)</em>
+        </span>
+        <p>
+          As an Android Developer Intern, I collaborated within an agile
+          development team to design and deliver a functional news application
+          prototype within one month, which we successfully presented to
+          management. The internship provided hands-on experience in Android
+          development, system requirements specification, and agile
+          methodologies. I focused on implementing features and adapting to new
+          programming languages and frameworks, allowing me to quickly learn and
+          apply unfamiliar technologies. Despite tight timelines, our team
+          effectively delivered a working application, showcasing our ability to
+          work cohesively and meet project goals.
+        </p>
+
         <hr color="gray" />
+
         <h2>Education</h2>
-        <h3>Master of Arts in New Media</h3>
-        <span>Aalto University</span>
+        <h3>BS Computer Science – Honor Roll</h3>
+        <span>University of the Philippines - Los Baños</span>
         <p>
-          <a
-            href="https://aaltodoc.aalto.fi/handle/123456789/40753"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Cursor.Pointer}
-          >
-            My Master’s Thesis
-          </a>{" "}
-          in New Media Design & Production handled the issues faced by a UI/UX
-          designer on a daily basis with design systems with a designed concept
-          to improve the use of systems in daily tasks. Usability School as
-          minor, major New Media studies.
+          My Bachelor's Thesis in computer science handled the issues faced by a
+          non-profit organization in handling their translation for the internal
+          dashboard they created. The process flow on handling the translation
+          since they were using i18n package from Angular. Not all the content
+          in the dashboard was tagged with the i18n tags, so first I had to
+          parse the codebase and directly output the existing translations into
+          the platform that I developed. Then I invited the translators to the
+          platform to edit the translations. Lastly, the translations inside the
+          platform was integrated back to the Angular codebase.
         </p>
-        <h3>Bachelor of Arts in Audiovisual Media</h3>
-        <span>University of Lapland</span>
-        <p>
-          Bachelor studies in Audiovisual Media with a focus in user
-          inter-action and multimedia studies. Thesis work on proactive UX
-          design for a mobile interface. Exchange studies at Institut d'Études
-          Politiques de Paris in Latin American Studies.
-        </p>
-        <h3>International Baccalaureate (IB)</h3>
-        <span>United World College Costa Rica</span>
-        <p>
-          International Baccalaureate degree at the United World College Costa
-          Rica as the Finnish Cultural Fund fellow and Finnish representative.
-          Higher level subjects: Spanish B, Economics, History of the Americas.
-          Standard Level: English A1, Mathematical Studies, Environmental
-          Systems and Societies. Active member of music events on the campus as
-          well as green house activities.
-        </p>
+
         <hr color="gray" />
-        <h2>Languages in order of strength</h2>
+
+        <h2>Interests</h2>
+
         <ul>
-          <li>Finnish</li>
-          <li>English</li>
-          <li>Spanish</li>
-        </ul>
-        <p>Elementary knowledge in following:</p>
-        <ul>
-          <li>French</li>
-          <li>Swedish</li>
-          <li>Portuguese</li>
+          <li>Cycling and Running</li>
+          <li>Webtoons</li>
+          <li>DevOps and SRE</li>
+          <li>Automation</li>
+          <li>Exploring New Tech Stack</li>
         </ul>
       </S.styledModalFrame>
     </S.styledModal>

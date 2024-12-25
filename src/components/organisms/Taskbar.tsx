@@ -8,12 +8,13 @@ import {
   User,
 } from "@react95/icons";
 import { MouseEventHandler } from "react";
+import Resume from "@/assets/SAHAGUN_Bernieson-Resume.pdf";
 
 const socialMedia = [
   {
     id: 0,
     name: "LinkedIn",
-    url: "https://www.linkedin.com/feed/",
+    url: "https://www.linkedin.com/in/bernieson-sahagun/",
   },
   {
     id: 1,
@@ -24,6 +25,11 @@ const socialMedia = [
     id: 2,
     name: "Email me",
     url: "mailto:berniesonsahagun@gmail.com",
+  },
+  {
+    id: 3,
+    name: "View my resume",
+    url: Resume,
   },
 ];
 
@@ -51,7 +57,7 @@ export default function Taskbar({
             icon={<Progman34 variant="32x32_4" />}
           >
             Socials
-            <List width={"120px"}>
+            <List width={"150px"}>
               {socialMedia.map(({ id, name, url }) => (
                 <a className="listLink" target="_blank" href={url} key={id}>
                   <List.Item className={`${Cursor.Pointer} listLink`}>

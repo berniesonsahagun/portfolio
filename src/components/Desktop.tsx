@@ -13,7 +13,6 @@ import {
   PaintModal,
   PhotoModal,
   PortfolioModal,
-  RecentWorksModal,
   SkillsModal,
 } from "@/components/modals";
 
@@ -34,26 +33,23 @@ function Desktop() {
     useModal(false);
   const [showMusicModal, handleOpenMusicModal, handleCloseMusicModal] =
     useModal(false);
-  const [
-    showRecentWorksModal,
-    handleOpenRecentWorksModal,
-    handleCloseRecentWorksModal,
-  ] = useModal(false);
 
   return (
     <>
       <S.DesktopGrid>
         <S.DesktopItemsContainer>
           <S.DesktopTexture></S.DesktopTexture>
-          <DesktopIcons
-            openEventHandlers={[
-              handleOpenAboutModal,
-              handleOpenPortfolioModal,
-              handleOpenPaintModal,
-              handleOpenMusicModal,
-              handleOpenRecentWorksModal,
-            ]}
-          />
+
+          <S.DesktopIconsContainer>
+            <DesktopIcons
+              openEventHandlers={[
+                handleOpenAboutModal,
+                handleOpenPortfolioModal,
+                handleOpenPaintModal,
+                handleOpenMusicModal,
+              ]}
+            />
+          </S.DesktopIconsContainer>
 
           {showAboutModal && (
             <AboutModal handleCloseModal={handleCloseAboutModal} />
@@ -79,10 +75,6 @@ function Desktop() {
 
           {showMusicModal && (
             <MusicModal handleCloseModal={handleCloseMusicModal} />
-          )}
-
-          {showRecentWorksModal && (
-            <RecentWorksModal handleCloseModal={handleCloseRecentWorksModal} />
           )}
         </S.DesktopItemsContainer>
 
