@@ -1,16 +1,12 @@
 import Desktop from "@/components/Desktop";
+//@ts-expect-error this does not include type
 import "@react95/core/GlobalStyle";
 import "@react95/core/themes/storm.css";
-import { ClippyProvider } from "@react95/clippy";
-import Clippy from "@/components/Clippy";
 
 function App() {
   return (
     <>
-      <ClippyProvider agentName="Clippy">
-        <Clippy />
-        <Desktop />
-      </ClippyProvider>
+      <Desktop />
     </>
   );
 }
